@@ -1,10 +1,8 @@
 let i = 0;
-let caseId = `place-${i}`;
 let xArray = [];
 let oArray = [];
 let resultDisplay = document.querySelector('.js-display-result');
 let playerChoice = Math.round(Math.random());
-console.log(playerChoice);
 
 let btn0 = document.getElementById('btn-0');
 let btn1 = document.getElementById('btn-1');
@@ -21,11 +19,7 @@ let btnp = document.getElementById('js-btn-p');
 
 function playGame(caseNum) {
     let btndispalyer = document.querySelector(`.place-${caseNum}`);
-    playerTurn(btndispalyer, caseNum);
-
-    console.log('xArray : ' + xArray);
-    console.log('oArray : ' + oArray);
-    
+    playerTurn(btndispalyer, caseNum);    
 
     //1st Player [X] Win Possibilities
     if (xArray.length > 2){
