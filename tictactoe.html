@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>TicTacToe Game</title>
+
+        <link href="/styles/tictactoe.css" rel="stylesheet" >
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="game-container">
+            <div class="game-section">
+                <div class="row row-1">
+                    <button type="button" class="case place-0" id="btn-0" onclick="playGame(0);" disabled></button>
+                    <button type="button" class="case place-1" id="btn-1" onclick="playGame(1);" disabled></button>
+                    <button type="button" class="case place-2" id="btn-2" onclick="playGame(2);" disabled></button>
+                </div>
+                <div class="row row-2">
+                    <button type="button" class="case place-3" id="btn-3" onclick="playGame(3);" disabled></button>
+                    <button type="button" class="case place-4" id="btn-4" onclick="playGame(4);" disabled></button>
+                    <button type="button" class="case place-5" id="btn-5" onclick="playGame(5);" disabled></button>
+                </div>
+                <div class="row row-3">
+                    <button type="button" class="case place-6" id="btn-6" onclick="playGame(6);" disabled></button>
+                    <button type="button" class="case place-7" id="btn-7" onclick="playGame(7);" disabled></button>
+                    <button type="button" class="case place-8" id="btn-8" onclick="playGame(8);" disabled></button>
+                </div>
+                
+            </div>
+            <div class="buttons js-buttons">
+                <button type="button" id="js-btn-p" onclick="btnEnable();
+                resultDisplay.innerHTML = '';">Start</button>
+                <button type="button" id="js-btn-pa" onclick="playAgain();" disabled>Play Again</button>
+                <button type="button" id="js-btn-score" onclick="location.reload();" disabled>Reset Score</button>
+            </div>
+            <div class="score-display js-score-display">
+                <p class="js-display-result">Press 'Start'</p>
+            </div>
+            
+        </div>
+
+
+        <script src="/scripts/tictactoe.js"></script>
+    </body>
+</html>
